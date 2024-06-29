@@ -26,20 +26,44 @@
             align-items: center;
             justify-content: center;
             flex-direction: column;
+            padding: 10px;
             
         }
+
+        div {
+            width: 105px;
+            height: 50px;
+            padding: 5px;
+        }
+
+        #sim, #nao  {
+            color: azure;;
+            border: 0;
+            width: 50px;
+            height: 20px
+        }
+
+        #sim {
+            background-color: green;
+        }
+
+        #nao {
+            background-color: red;
+        }
+
+        
     </style>
 </head>
 <body>
     <main>
         <h1>Quer namorar comigo??</h1>
         <div>
-            <button>Sim</button>
-            <button id="no">Não</button>
+            <button id="sim">Sim</button>
+            <button id="nao">Não</button>
         </div>
     </main>
     <script>
-        let button = document.getElementById('no');
+        let button = document.getElementById('nao');
         let height = window.innerHeight - 50;
         let width = window.innerWidth - 50;
 
