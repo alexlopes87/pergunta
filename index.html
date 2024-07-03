@@ -9,6 +9,7 @@
             margin: 0;
             padding: 0;
             box-sizing: 0;
+            font-family: Arial, Helvetica, sans-serif;
         }
         
         html, body {
@@ -17,10 +18,15 @@
             align-items: center;
             width: 100%;
             height: 100vh;
+            background-image: url(backgroud.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow: auto;
         }
 
         h1 {
-            color: blueviolet;
+            color: rgb(153, 10, 153);
             font-family: Arial, Helvetica, sans-serif;
             font-size: 2em;
             padding: 8px;
@@ -34,7 +40,7 @@
             width: 400px;
             padding: 30px;
             border: 1px solid black;
-            background-color: rgba(0, 0, 0, 0.445);
+            background-color: rgba(0, 0, 0, 0.767);
         }
 
         main > div {
@@ -81,8 +87,8 @@
     </main>
     <script>
         let button = document.getElementById('nao');
-        let height = window.innerHeight - 50;
-        let width = window.innerWidth - 50;
+        let height = window.innerHeight - 60;
+        let width = window.innerWidth - 60;
 
         button.addEventListener('mouseover', function () {
             button.style.position = "absolute";
