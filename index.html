@@ -3,128 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Pergunta</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        
-        html, body {
-            width: 100%;
-            height: 100dvh;
-            background-color: rgb(19, 18, 18);
-        }
-
-        body {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background-image: url(background.jpg);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            overflow: auto;
-        }
-
-        h1 {
-            color: rgb(233, 230, 230);
-            font-size: 2em;
-            padding: 8px;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.356);
-        }
-
-        main {
-            display: flex;
-            flex: 1;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.61);
-        }
-
-        main > section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 300px;
-            padding: 30px;
-            border: 1px solid black;
-            background-color: rgba(0, 0, 0, 0.767);
-            border-radius: 5px;
-        }
-
-        main > section > div {
-            width: 105px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-        }
-
-        main > section > div a {
-            text-decoration: none;
-            color: white;
-        }
-
-        main > section > div a:hover {
-            font-weight: bold;
-        }
-
-        main > section > div > button {
-            width: 50px;
-            height: 20px;
-            border: 1px solid grey;
-            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.425);
-        }
-
-        main > section > div > button#sim {
-            background-color: green;
-        }
-
-        main > section > div > button#nao {
-            background-color: red;
-        }
-
-        footer {
-            width: 100%;
-            text-align: center;
-        }
-
-        footer > p {
-            padding: 7px;
-            font-size: 0.7em;
-        }
-
-        footer > p > a {
-            text-decoration: none;
-            color: black;
-            font-weight: bold;
-        }
-
-        footer > p > a:hover {
-            text-decoration: underline;
-        }
-
-        @media screen and (min-width: 768px) {
-            main > section {
-                width: 500px;
-                height: 300px;
-            }
-
-            main > section > h1 {
-                font-size: 3em;
-            }
-
-            footer > p {
-                padding: 7px;
-                font-size: 0.9em;
-            }
-        }
-    </style>
 </head>
 <body>
     <main>
@@ -139,16 +19,6 @@
     <footer>
         <p>&copy;2024 Created by <a href="https://alexlopes.site">Alex Lopes</a></p>
     </footer>
-    <script>
-        let button = document.getElementById('nao')
-        let height = window.innerHeight - 60
-        let width = window.innerWidth - 60
-
-        button.addEventListener('mouseover', function () {
-            button.style.position = "absolute"
-            button.style.top = Math.random() * height + "px"
-            button.style.left = Math.random() * width + "px"
-        })
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
