@@ -42,7 +42,7 @@ main {
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.61);
 }
 
-main > section {
+section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -54,33 +54,30 @@ main > section {
     border-radius: 5px;
 }
 
-main > section > div {
+section > div {
     width: 105px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-main > section > div a {
-    text-decoration: none;
-    color: white;
-}
-
-main > section > div a:hover {
-    font-weight: bold;
-}
-
-main > section > div > button {
+section > div > button {
     width: 50px;
     height: 20px;
     border: 1px solid grey;
+    color: white;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.425);
 }
 
-main > section > div > button#sim {
+section > div > button:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+section > div > button#sim {
     background-color: green;
 }
 
-main > section > div > button#nao {
+section > div > button#nao {
     background-color: red;
 }
 
@@ -103,7 +100,6 @@ footer > p > a {
 footer > p > a:hover {
     text-decoration: underline;
 }
-
 
 @media screen and (min-width: 768px) {
     main > section {
