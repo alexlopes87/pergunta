@@ -78,26 +78,6 @@ section > div > button#nao {
     background-color: red;
 }
 
-footer {
-    width: 100%;
-    text-align: center;
-}
-
-footer > p {
-    padding: 7px;
-    font-size: 0.7em;
-}
-
-footer > p > a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-
-footer > p > a:hover {
-    text-decoration: underline;
-}
-
 @media screen and (min-width: 992px) {
     section {
         width: 500px;
@@ -115,10 +95,5 @@ footer > p > a:hover {
     section > div > button {
         width: 65px;
         height: 25px;
-    }
-
-    footer > p {
-        padding: 7px;
-        font-size: 0.9em;
     }
 }
